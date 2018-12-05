@@ -10,7 +10,8 @@
   },
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "dev": "concurrently --kill-others \"npm run compile:sass\" \"live-server\""
+    "dev": "concurrently --kill-others \"npm run compile:sass\" \"live-server\"",
+    "open": "open index.html"
   },
   "repository": {
     "type": "git",
