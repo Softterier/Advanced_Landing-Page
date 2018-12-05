@@ -1,0 +1,25 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Landing Page using SASS",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "node-sass": "^4.10.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev": "concurrently --kill-others \"npm run compile:sass\" \"live-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevPolo/Advanced-Landing-Page.git"
+  },
+  "author": "DevPolo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevPolo/Advanced-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/DevPolo/Advanced-Landing-Page#readme"
+}
