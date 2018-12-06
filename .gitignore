@@ -1,3 +1,7 @@
 img/*
 /node_modules
 /package-lock.json
+
+# CSS
+css/webfonts
+css/icon-font.css
