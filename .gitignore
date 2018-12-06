@@ -1,7 +1,9 @@
-img/*
+# Global
 /node_modules
 /package-lock.json
 
-# CSS
+# Images
+img/*
+
+# CSS Fontawesome Icons
 css/webfonts
-css/icon-font.css
