@@ -34,11 +34,18 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   transition: all 0.2s;
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--color {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(5deg) scale(1.1);
