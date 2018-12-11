@@ -3,7 +3,6 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 3rem;
 }
 
 .heading-primary {
@@ -16,15 +15,17 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 0;
     animation: moveInLeft 1s ease-out;
+
+    @include width(sm) {
+      font-size: 5rem;
+    }
   }
 
   &--sub {
     display: block;
     font-size: 2rem;
     font-weight: 400;
-    letter-spacing: 0;
     animation: moveInRight 1s ease-out;
   }
 }
@@ -38,6 +39,14 @@ body {
   background-clip: text;
   color: transparent;
   transition: all 0.2s;
+
+  @include width(md) {
+    font-size: 3rem;
+  }
+
+  @include width(sm) {
+    font-size: 2.5rem;
+  }
 
   &--white {
     color: $color-white;

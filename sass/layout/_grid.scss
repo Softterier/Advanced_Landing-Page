@@ -5,6 +5,15 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include width(md) {
+      margin-bottom: $gutter-vertical-sm;
+    }
+  }
+
+  @include width(md) {
+    max-width: 50rem;
+    padding: 0 3rem;
   }
 
   @include clearfix;
@@ -14,6 +23,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include width(md) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-sm;
+      }
+    }
+
+    @include width(md) {
+      width: 100% !important;
     }
   }
 

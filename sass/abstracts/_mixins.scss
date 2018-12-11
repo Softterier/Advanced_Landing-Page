@@ -20,29 +20,37 @@
 900 - 1200px:     lg - Tablet landscape
 [1200 - 1800]          Where our normal styles apply
 1800px +          xl - Big desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
 */
 
-@mixin respond($breakpoint) {
+@mixin width($breakpoint) {
   @if $breakpoint==sm {
-    @media (max-width: 600px) {
+    // 600px
+    @media (max-width: 37.5em) {
       @content;
     }
   }
 
   @if $breakpoint==md {
-    @media (max-width: 900px) {
+    // 900px
+    @media (max-width: 56.25em) {
       @content;
     }
   }
 
   @if $breakpoint==lg {
-    @media (max-width: 1200px) {
+    // 1200px
+    @media (max-width: 75em) {
       @content;
     }
   }
 
   @if $breakpoint==xl {
-    @media (min-width: 1800px) {
+    // 1800px
+    @media (min-width: 112.5em) {
       @content;
     }
   }
