@@ -1,3 +1,10 @@
+/*
+0 - 600px:        sm - Phone
+600 - 900px:      md - Tablet portrait
+900 - 1200px:     lg - Tablet landscape
+[1200 - 1800]          Where our normal styles apply
+1800px +          xl - Big desktop
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
